@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex AI — AI agency for SMEs: plug & play agents, automations, consulting</title>
+<meta name="description" content="Alex AI designs and deploys AI solutions for SMEs: plug & play AI agents, custom automations and consulting. Integrated into your tools.">
+<!-- Theme : Encre & Sauge -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { ink:'#13212E', inksoft:'#1B2E3F', ivory:'#F7F5F0', ivorypure:'#FFFFFF', sage:'#4A6F5D', sagelight:'#6B8E7B', copper:'#B9774A', copperlight:'#CB8A5E', muted:'#5C6B73' },
+    fontFamily: { serif:['Fraunces','serif'], sans:['Inter','sans-serif'] }
+  } }
+}
+</script>
+<style>
+  html { scroll-behavior:smooth; }
+  body { font-family:'Inter',sans-serif; }
+  h1,h2,h3 { font-family:'Fraunces',serif; }
+  .eyebrow { letter-spacing:0.22em; }
+  .carousel { scroll-snap-type:x mandatory; scrollbar-width:thin; }
+  .carousel::-webkit-scrollbar { height:8px; }
+  .carousel::-webkit-scrollbar-thumb { background:#cdbfa9; border-radius:9999px; }
+  .snap-card { scroll-snap-align:start; }
+</style>
+</head>
+<body class="bg-ivory text-ink antialiased">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-ivory/85 backdrop-blur border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#top" class="font-serif text-xl font-semibold tracking-tight">Alex<span class="text-sage">·</span>AI</a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-ink/70">
+      <a href="#services" class="hover:text-ink transition">Services</a>
+      <a href="#work" class="hover:text-ink transition">Work</a>
+      <a href="#testimonials" class="hover:text-ink transition">Testimonials</a>
+      <a href="#process" class="hover:text-ink transition">Process</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-1.5 text-sm"><a href="../" class="text-ink/50 hover:text-ink transition">FR</a><span class="text-ink/20">|</span><span class="font-semibold text-ink">EN</span></span>
+      <a href="https://calendly.com/ahebert79/rdv-decouverte" target="_blank" rel="noopener"
+         class="text-sm font-medium bg-copper hover:bg-copperlight text-ivory px-4 py-2 rounded-full transition">Book a call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="bg-ivory">
+  <div class="max-w-4xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-28 text-center">
+    <div class="flex justify-center -space-x-3 mb-8">
+      <span class="w-12 h-12 rounded-full bg-sage text-ivory flex items-center justify-center font-serif text-lg ring-4 ring-ivory">A</span>
+      <span class="w-12 h-12 rounded-full bg-ink text-ivory flex items-center justify-center font-serif text-lg ring-4 ring-ivory">A</span>
+    </div>
+    <p class="eyebrow uppercase text-xs font-medium text-sage mb-6">AI agency for SMEs</p>
+    <h1 class="font-serif text-4xl md:text-6xl font-semibold leading-[1.05]">AI that works<br><span class="text-sage">for your business.</span></h1>
+    <p class="mt-7 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed">Plug &amp; play AI agents, custom automations and consulting. Designed, deployed and integrated into your tools — without the complexity.</p>
+    <div class="mt-9 flex flex-wrap justify-center items-center gap-4">
+      <a href="https://calendly.com/ahebert79/rdv-decouverte" target="_blank" rel="noopener"
+         class="bg-copper hover:bg-copperlight text-ivory font-medium px-7 py-3.5 rounded-full transition">Book a call</a>
+      <a href="#services" class="text-sm text-ink/70 hover:text-ink transition">Explore our services →</a>
+    </div>
+  </div>
+</header>
+
+<!-- SERVICES -->
+<section id="services" class="bg-ivory">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <p class="eyebrow uppercase text-xs font-medium text-sage mb-4">Services</p>
+    <h2 class="font-serif text-3xl md:text-4xl font-semibold max-w-2xl">Three ways to put AI to work.</h2>
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+
+      <div class="bg-ivorypure rounded-2xl border border-ink/5 shadow-sm overflow-hidden flex flex-col">
+        <div class="h-32 bg-sage/10 flex items-center justify-center relative">
+          <span class="absolute top-4 right-5 font-serif text-2xl text-sage/30">01</span>
+          <svg class="w-12 h-12 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M12 7V4M9 12h.01M15 12h.01M9 16h6"/></svg>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h3 class="text-xl font-semibold">Plug &amp; Play AI Agents</h3>
+          <p class="mt-3 text-muted leading-relaxed">Specialized AI agents for your key functions — sales, support, content, operations. Ready to deploy, plugged into your tools.</p>
+          <ul class="mt-5 space-y-2.5 text-sm text-ink/75">
+            <li class="flex gap-2"><span class="text-sage">✓</span> Pre-trained for your use cases</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Up and running in days</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Integrated with your existing tools</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> No code to maintain</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Scalable with your business</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-ivorypure rounded-2xl border border-ink/5 shadow-sm overflow-hidden flex flex-col">
+        <div class="h-32 bg-sage/10 flex items-center justify-center relative">
+          <span class="absolute top-4 right-5 font-serif text-2xl text-sage/30">02</span>
+          <svg class="w-12 h-12 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 4v3h-3M6 20v-3h3"/></svg>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h3 class="text-xl font-semibold">Custom Automations</h3>
+          <p class="mt-3 text-muted leading-relaxed">Workflows that eliminate repetitive tasks, from first contact to delivery. Your business on autopilot.</p>
+          <ul class="mt-5 space-y-2.5 text-sm text-ink/75">
+            <li class="flex gap-2"><span class="text-sage">✓</span> 100% custom workflows</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> End-to-end processes</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Integrated into your stack</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Designed, deployed and maintained</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Supervised, with safeguards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-ivorypure rounded-2xl border border-ink/5 shadow-sm overflow-hidden flex flex-col">
+        <div class="h-32 bg-sage/10 flex items-center justify-center relative">
+          <span class="absolute top-4 right-5 font-serif text-2xl text-sage/30">03</span>
+          <svg class="w-12 h-12 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h3 class="text-xl font-semibold">AI Consulting &amp; Audit</h3>
+          <p class="mt-3 text-muted leading-relaxed">Mapping of your processes and tools to reveal the highest-impact automations — with a clear roadmap to match.</p>
+          <ul class="mt-5 space-y-2.5 text-sm text-ink/75">
+            <li class="flex gap-2"><span class="text-sage">✓</span> Audit of your workflows</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Process mapping</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Tools &amp; data diagnosis</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> Impact-based prioritization</li>
+            <li class="flex gap-2"><span class="text-sage">✓</span> AI roadmap</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="bg-ink text-ivory">
+  <div class="max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
+    <p class="eyebrow uppercase text-xs font-medium text-sagelight mb-6">Introduction</p>
+    <p class="font-serif text-2xl md:text-4xl leading-snug">Alex AI designs and deploys AI solutions for SMEs — from plug &amp; play agents to custom automation. Not tech for tech's sake: concrete systems, integrated into your tools, <span class="text-sagelight">that run and that last.</span></p>
+  </div>
+</section>
+
+<!-- WORK / CAROUSEL -->
+<section id="work" class="bg-ink text-ivory border-t border-ivory/10">
+  <div class="max-w-6xl mx-auto px-6 pt-20 md:pt-24 pb-6">
+    <p class="eyebrow uppercase text-xs font-medium text-sagelight mb-4">Work</p>
+    <h2 class="font-serif text-3xl md:text-4xl font-semibold max-w-3xl">What AI automation can do for you.</h2>
+    <p class="mt-5 text-lg text-ivory/70 max-w-2xl leading-relaxed">Concrete systems, already built. <span class="text-sagelight">Client case</span> = in production · <span class="text-ivory/90">Deployable</span> = adaptable to your context.</p>
+  </div>
+  <div class="carousel overflow-x-auto pb-10">
+    <div class="flex gap-5 px-6 max-w-6xl mx-auto min-w-min">
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-sage">Sales</span><span class="text-[11px] font-medium bg-sage/12 text-sage px-2.5 py-1 rounded-full">Client case</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">A 24/7 AI salesperson on Instagram</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">DM received</span><span class="text-sage">→</span><span class="bg-ink/5 px-2 py-1 rounded">AI qualifies</span><span class="text-sage">→</span><span class="bg-sage/15 text-sage px-2 py-1 rounded font-medium">Meeting booked</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">Qualifies prospects (text, voice, image) and books meetings for you, with no human intervention.</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">ManyChat</span><span class="border border-ink/10 px-2 py-0.5 rounded">GPT</span><span class="border border-ink/10 px-2 py-0.5 rounded">Whisper</span></div>
+      </article>
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-sage">Sales</span><span class="text-[11px] font-medium bg-sage/12 text-sage px-2.5 py-1 rounded-full">Client case</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">From call to signed proposal</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">Call notes</span><span class="text-sage">→</span><span class="bg-ink/5 px-2 py-1 rounded">AI drafts</span><span class="text-sage">→</span><span class="bg-sage/15 text-sage px-2 py-1 rounded font-medium">Quote + signature</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">One click after the meeting → deck, quote, e-signature and email ready to send.</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">Gamma</span><span class="border border-ink/10 px-2 py-0.5 rounded">Qonto</span><span class="border border-ink/10 px-2 py-0.5 rounded">Docuseal</span></div>
+      </article>
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-sage">Sales</span><span class="text-[11px] font-medium bg-ink/5 text-muted px-2.5 py-1 rounded-full">Deployable</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">Hot alert: a prospect posts</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">Post detected</span><span class="text-sage">→</span><span class="bg-ink/5 px-2 py-1 rounded">Signal sorting</span><span class="text-sage">→</span><span class="bg-sage/15 text-sage px-2 py-1 rounded font-medium">Sales alert</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">Notifies the rep as soon as a priority prospect posts on LinkedIn, to react at the right moment.</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">Sales Navigator</span><span class="border border-ink/10 px-2 py-0.5 rounded">Unipile</span></div>
+      </article>
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-[#3F7C82]">Content</span><span class="text-[11px] font-medium bg-ink/5 text-muted px-2.5 py-1 rounded-full">Deployable</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">AI community manager</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">Voice + photo</span><span class="text-[#3F7C82]">→</span><span class="bg-ink/5 px-2 py-1 rounded">AI writes</span><span class="text-[#3F7C82]">→</span><span class="bg-[#3F7C82]/12 text-[#3F7C82] px-2 py-1 rounded font-medium">Published FB/IG</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">From a voice note and a photo to an optimized post, approved by you, published on the right day.</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">Telegram</span><span class="border border-ink/10 px-2 py-0.5 rounded">Vision</span><span class="border border-ink/10 px-2 py-0.5 rounded">Meta API</span></div>
+      </article>
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-[#3F7C82]">Content</span><span class="text-[11px] font-medium bg-ink/5 text-muted px-2.5 py-1 rounded-full">Deployable</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">Instagram competitive watch</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">Tracked accounts</span><span class="text-[#3F7C82]">→</span><span class="bg-ink/5 px-2 py-1 rounded">Scraping</span><span class="text-[#3F7C82]">→</span><span class="bg-[#3F7C82]/12 text-[#3F7C82] px-2 py-1 rounded font-medium">Top content</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">Spots the best-performing posts from your competitors every week, to feed your strategy.</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">Apify</span><span class="border border-ink/10 px-2 py-0.5 rounded">NocoDB</span></div>
+      </article>
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-copper">Operations</span><span class="text-[11px] font-medium bg-sage/12 text-sage px-2.5 py-1 rounded-full">Client case</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">CV screening by 3 cross-checked AIs</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">CV received</span><span class="text-copper">→</span><span class="bg-ink/5 px-2 py-1 rounded">3 AIs score</span><span class="text-copper">→</span><span class="bg-copper/12 text-copper px-2 py-1 rounded font-medium">Reliable score</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">Each CV evaluated by OpenAI, Anthropic and Google; scores averaged to limit bias.</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">OpenAI</span><span class="border border-ink/10 px-2 py-0.5 rounded">Anthropic</span><span class="border border-ink/10 px-2 py-0.5 rounded">Gemini</span></div>
+      </article>
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-copper">Operations</span><span class="text-[11px] font-medium bg-ink/5 text-muted px-2.5 py-1 rounded-full">Deployable</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">Smart inbox sorting</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">Email received</span><span class="text-copper">→</span><span class="bg-ink/5 px-2 py-1 rounded">AI classifies</span><span class="text-copper">→</span><span class="bg-copper/12 text-copper px-2 py-1 rounded font-medium">Label / to review</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">Sorts emails by your rules and flags "to review" when the AI isn't sure — you stay in control.</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">Gmail</span><span class="border border-ink/10 px-2 py-0.5 rounded">Sheets</span><span class="border border-ink/10 px-2 py-0.5 rounded">OpenAI</span></div>
+      </article>
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-copper">Operations</span><span class="text-[11px] font-medium bg-ink/5 text-muted px-2.5 py-1 rounded-full">Deployable</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">AI-drafted replies for customer service</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">Customer email</span><span class="text-copper">→</span><span class="bg-ink/5 px-2 py-1 rounded">AI drafts</span><span class="text-copper">→</span><span class="bg-copper/12 text-copper px-2 py-1 rounded font-medium">Approved draft</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">A personalized draft placed in the thread, based on your knowledge base — never sent without you.</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">Gmail</span><span class="border border-ink/10 px-2 py-0.5 rounded">OpenAI</span></div>
+      </article>
+      <article class="snap-card shrink-0 w-80 bg-ivory text-ink rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center justify-between"><span class="text-xs font-semibold uppercase tracking-wide text-copper">Operations</span><span class="text-[11px] font-medium bg-ink/5 text-muted px-2.5 py-1 rounded-full">Deployable</span></div>
+        <h3 class="mt-4 text-lg font-semibold leading-snug">Strategic watch every morning</h3>
+        <div class="mt-4 flex items-center gap-2 text-[11px] text-muted"><span class="bg-ink/5 px-2 py-1 rounded">Tracked topics</span><span class="text-copper">→</span><span class="bg-ink/5 px-2 py-1 rounded">AI research</span><span class="text-copper">→</span><span class="bg-copper/12 text-copper px-2 py-1 rounded font-medium">Sourced summary</span></div>
+        <p class="mt-4 text-sm text-muted leading-relaxed flex-1">An up-to-date, sourced summary every morning on the topics you follow (Perplexity Deep Research).</p>
+        <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-ink/55"><span class="border border-ink/10 px-2 py-0.5 rounded">Perplexity</span><span class="border border-ink/10 px-2 py-0.5 rounded">NocoDB</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-ivory">
+  <div class="max-w-5xl mx-auto px-6 py-20 md:py-28">
+    <div class="text-center">
+      <p class="eyebrow uppercase text-xs font-medium text-sage mb-4">About</p>
+      <h2 class="font-serif text-3xl md:text-4xl font-semibold">Two Alex, one agency.</h2>
+      <p class="mt-6 text-lg text-ink/80 max-w-3xl mx-auto leading-relaxed">Alex AI builds <span class="font-medium">custom</span> business-process automations that deliver maximum value — with a level of reliability and robustness on par with the best SaaS solutions. Our purpose: to free entrepreneurs, business leaders and their teams from time-consuming, repetitive tasks, so that human intelligence can focus on what is meaningful and valuable.</p>
+    </div>
+    <div class="mt-14 grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+      <div class="text-center">
+        <img src="../img/alex-hebert.jpg" alt="Alexandre Hébert" class="w-32 h-32 rounded-full object-cover mx-auto ring-1 ring-ink/10">
+        <p class="mt-5 font-semibold text-lg">Alexandre Hébert</p>
+        <p class="text-sm text-sage font-medium">Co-founder</p>
+        <p class="mt-3 text-muted leading-relaxed">A deep knowledge of the business world — audit, consulting, training, general and sales management. To design automations that make sense.</p>
+      </div>
+      <div class="text-center">
+        <img src="../img/alex-errasti.jpg" alt="Alex Errasti" class="w-32 h-32 rounded-full object-cover mx-auto ring-1 ring-ink/10">
+        <p class="mt-5 font-semibold text-lg">Alex Errasti</p>
+        <p class="text-sm text-sage font-medium">Co-founder</p>
+        <p class="mt-3 text-muted leading-relaxed">A double degree in computer engineering and from ESSEC. IT project manager at OnePoint then Accenture. The assurance of delivering what's promised.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="bg-[#EFece3]">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-24">
+    <p class="eyebrow uppercase text-xs font-medium text-sage mb-4">Testimonials</p>
+    <h2 class="font-serif text-3xl md:text-4xl font-semibold">They trust us.</h2>
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <figure class="bg-ivorypure rounded-2xl p-7 border border-ink/5 flex flex-col">
+        <blockquote class="text-ink/80 leading-relaxed flex-1">“ I outsource my prospecting to Alex AI, which fills my slots with AI agents built specifically for me. ”</blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <img src="../img/teetime-logo.png" alt="Tee Time" class="w-10 h-10 rounded-full object-contain bg-ink/5 p-1">
+          <span><span class="block font-semibold text-sm">Valère</span><span class="block text-xs text-muted">Tee Time — indoor golf B2B</span></span>
+        </figcaption>
+      </figure>
+      <figure class="bg-ivorypure rounded-2xl p-7 border border-ink/5 flex flex-col">
+        <blockquote class="text-ink/80 leading-relaxed flex-1">“ The AI agents we set up save me a lot of time. I now handle twice as many clients every month. ”</blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-sage/15 text-sage flex items-center justify-center font-serif">J</span>
+          <span><span class="block font-semibold text-sm">Jana</span><span class="block text-xs text-muted">JPH Consulting — EmTech &amp; Warbird</span></span>
+        </figcaption>
+      </figure>
+      <figure class="bg-ivorypure rounded-2xl p-7 border border-ink/5 flex flex-col">
+        <blockquote class="text-ink/80 leading-relaxed flex-1">“ Alex AI built an AI system that produces my quotes from the architect's plans. Time savings and reliability. ”</blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-sage/15 text-sage flex items-center justify-center font-serif">S</span>
+          <span><span class="block font-semibold text-sm">Sébastien</span><span class="block text-xs text-muted">Electrician, Annecy</span></span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="bg-ivory">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="eyebrow uppercase text-xs font-medium text-sage mb-4">Process</p>
+    <h2 class="font-serif text-3xl md:text-4xl font-semibold max-w-2xl">Our method.</h2>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="border-l-2 border-sage pl-5"><div class="font-serif text-3xl text-sage/40 font-semibold">01</div><h3 class="mt-2 text-lg font-semibold">Audit</h3><p class="mt-2 text-sm text-muted leading-relaxed">Mapping of your processes and identification of the highest-impact automations.</p></div>
+      <div class="border-l-2 border-sage pl-5"><div class="font-serif text-3xl text-sage/40 font-semibold">02</div><h3 class="mt-2 text-lg font-semibold">Design</h3><p class="mt-2 text-sm text-muted leading-relaxed">A custom solution, built for your tools and your constraints.</p></div>
+      <div class="border-l-2 border-sage pl-5"><div class="font-serif text-3xl text-sage/40 font-semibold">03</div><h3 class="mt-2 text-lg font-semibold">Deployment</h3><p class="mt-2 text-sm text-muted leading-relaxed">Setup, integration and testing. Live within days.</p></div>
+      <div class="border-l-2 border-sage pl-5"><div class="font-serif text-3xl text-sage/40 font-semibold">04</div><h3 class="mt-2 text-lg font-semibold">Optimization</h3><p class="mt-2 text-sm text-muted leading-relaxed">Measurement, adjustments and evolution as your business grows.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-ink text-ivory">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 text-center">
+    <h2 class="font-serif text-3xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight">Let's talk about your project.</h2>
+    <p class="mt-5 text-lg text-ivory/70 max-w-xl mx-auto">30 minutes to understand your context and see where AI can save you time.</p>
+    <a href="https://calendly.com/ahebert79/rdv-decouverte" target="_blank" rel="noopener"
+       class="inline-block mt-9 bg-copper hover:bg-copperlight text-ivory font-medium px-8 py-4 rounded-full transition">Book a call</a>
+    <p class="mt-5 text-sm text-ivory/45">Prefer to leave your details? <a href="#" class="underline hover:text-ivory transition">Fill out the form</a> <span class="text-ivory/30">(Tally — link to connect)</span></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink border-t border-ivory/10 text-ivory/50">
+  <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
+    <span class="font-serif text-ivory">Alex<span class="text-sage">·</span>AI</span>
+    <span>AI agency for SMEs · Lyon</span>
+    <span>© 2026 Alex AI</span>
+  </div>
+</footer>
+
+</body>
+</html>
